@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Görevleri 6</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h2 { margin-top: 30px; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 5px 0; }
+    button { margin-left: 10px; }
+    .tamamlandi {
+      text-decoration: line-through;
+      color: green;
+    }
+    .renkKutusu {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      cursor: pointer;
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <h1> DOM Görevleri 6</h1>
+
+  <!-- 1. Mini Alışveriş Sepeti -->
+  <h2>1. Mini Alışveriş Sepeti</h2>
+  <ul id="urunListe">
+    <li>Elma <button class="sepeteEkleBtn">Sepete Ekle</button></li>
+    <li>Armut <button class="sepeteEkleBtn">Sepete Ekle</button></li>
+    <li>Çilek <button class="sepeteEkleBtn">Sepete Ekle</button></li>
+  </ul>
+  <h3>Sepet (<span id="sepetSayac">0</span>)</h3>
+  <ul id="sepetListe"></ul>
+
+  <!-- 2. Renk Paleti Üretici -->
+  <h2>2. Renk Paleti Üretici</h2>
+  <input type="text" id="renkInput" placeholder="#rrggbb">
+  <button id="renkEkleBtn">Ekle</button>
+  <div id="palet"></div>
+
+  <!-- 3. Canlı Not Defteri -->
+  <h2>3. Canlı Not Defteri</h2>
+  <textarea id="notInput" rows="4" cols="40" placeholder="Not yaz..."></textarea>
+  <button id="notEkleBtn">Not Ekle</button>
+  <p>Not sayısı: <span id="notSayac">0</span></p>
+  <ul id="notListe"></ul>
+
+  <!-- 4. Otomatik Sıralanan Liste -->
+  <h2>4. Otomatik Sıralanan Liste</h2>
+  <input type="text" id="siraliInput" placeholder="Öğe yaz...">
+  <button id="siraliEkleBtn">Ekle</button>
+  <ul id="siraliListe"></ul>
+
+  <script src="app.js">
+  </script>
+</body>
+</html>

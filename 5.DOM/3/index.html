@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orta → İleri Seviye DOM Görevleri</title>
+  <style>
+    #resim {
+      width: 150px;
+      display: block;
+      margin-top: 10px;
+    }
+    ul li {
+      padding: 5px;
+      margin-bottom: 3px;
+      cursor: pointer;
+    }
+    .sil-btn {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+ 
+  <h2>1) Sayaç + Renk Değiştirme</h2>
+  <p id="sayac">0</p>
+  <button id="arttir">Arttır</button>
+  <button id="sifirla">Sıfırla</button>
+
+  <hr>
+
+
+  <h2>2) Göster / Gizle + Yazı Değiştir</h2>
+  <button id="toggleBtn">Resmi Göster / Gizle</button>
+  <img id="resim" src="resim.png" alt="örnek resim">
+  <div id="resimYazi">Gösteriliyor</div>
+
+  <hr>
+
+ 
+  <h2>3) Mouseover List + Sil Butonu</h2>
+  <ul id="liste">
+    <li>Elma <button class="sil-btn">Sil</button></li>
+    <li>Armut <button class="sil-btn">Sil</button></li>
+    <li>Çilek <button class="sil-btn">Sil</button></li>
+    <li>Karpuz <button class="sil-btn">Sil</button></li>
+  </ul>
+
+  
+  <script src="app.js"></script>
+</body>
+</html>

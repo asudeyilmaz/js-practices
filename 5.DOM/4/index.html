@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Görevleri</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    ul { list-style: none; padding: 0; }
+    li { margin: 5px 0; }
+    button { margin-left: 10px; }
+    .dark {
+      background-color: #222;
+      color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <h1>DOM Görevleri 4</h1>
+
+  <!-- 1. Dinamik Liste -->
+  <h2>1. Dinamik Liste</h2>
+  <input type="text" id="itemInput" placeholder="Yeni öğe yaz">
+  <button id="ekleBtn">Ekle</button>
+  <ul id="dinamikListe"></ul>
+
+  <!-- 2. Tema Değiştirici -->
+  <h2>2. Tema Değiştirici</h2>
+  <button id="temaBtn">Dark Mode</button>
+
+  <!-- 3. Canlı Karakter Sayacı -->
+  <h2>3. Karakter Sayacı</h2>
+  <textarea id="metin" rows="4" cols="40" placeholder="Bir şeyler yaz..."></textarea>
+  <p>Karakter sayısı: <span id="sayac">0</span>/100</p>
+
+  <script src="app.js"></script>
+</body>
+</html>

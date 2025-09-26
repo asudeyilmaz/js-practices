@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Görevleri 5</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h2 { margin-top: 30px; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 5px 0; }
+    button { margin-left: 10px; }
+    .tamamlandi {
+      text-decoration: line-through;
+      color: gray;
+    }
+    .accordion p {
+      display: none;
+      margin: 0;
+      padding: 5px;
+      background: #f2f2f2;
+    }
+    .accordion h3 {
+      cursor: pointer;
+      margin: 0;
+      padding: 5px;
+      background: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>DOM Görevleri 5</h1>
+
+  <!-- 1. To-Do List -->
+  <h2>1. To-Do List</h2>
+  <input type="text" id="todoInput" placeholder="Görev yaz...">
+  <button id="todoEkle">Ekle</button>
+  <ul id="todoListe"></ul>
+
+  <!-- 2. Accordion -->
+  <h2>2. Açılır Kapanır Menü</h2>
+  <div class="accordion">
+    <h3>Başlık 1</h3>
+    <p>Bu başlığın altındaki içerik.</p>
+    <h3>Başlık 2</h3>
+    <p>İkinci başlığın altındaki içerik.</p>
+    <h3>Başlık 3</h3>
+    <p>Üçüncü başlığın altındaki içerik.</p>
+  </div>
+
+  <!-- 3. Sayaç Geri Sayım -->
+  <h2>3. Sayaç Geri Sayım</h2>
+  <input type="number" id="sayiInput" placeholder="Sayı gir">
+  <button id="baslatBtn">Başlat</button>
+  <p id="geriSayim">Bekleniyor...</p>
+
+  <script src="app.js">
+  </script>
+</body>
+</html>
